@@ -1,0 +1,43 @@
+:global(.etsy){background-color:var(--paper)!important;min-height:0!important;padding-bottom:90px!important;overflow:hidden}
+:global(.etsy .case-label){margin:0 0 28px!important}
+:global(.etsy .case-lead){margin:30px 0 58px!important}
+:global(.recognition-wall){height:1120px;max-width:1220px;margin:0 auto;position:relative}
+:global(.recognition-image){position:absolute;border:1px solid var(--ink);background:var(--paper);overflow:hidden;box-shadow:5px 6px 0 rgba(61,41,30,.12)}
+:global(.recognition-image img){object-fit:cover}
+:global(.recognition-hero){width:46%;height:52%;left:27%;top:0;z-index:2}
+:global(.recognition-hero img){object-position:center center}
+:global(.recognition-core){width:27%;height:31%;left:0;top:7%;transform:rotate(-1.7deg)}
+:global(.recognition-core img){object-position:center}
+:global(.recognition-easter){width:24%;height:27%;right:0;top:12%;transform:rotate(1.3deg)}
+:global(.recognition-easter img){object-position:center}
+:global(.recognition-home){width:31%;height:29%;right:4%;top:47%}
+:global(.recognition-home img){object-position:center}
+:global(.recognition-halloween){width:17%;height:21%;left:8%;top:48%;transform:rotate(1.2deg)}
+:global(.recognition-christmas){width:16%;height:20%;left:29%;top:59%}
+:global(.recognition-pet){width:21%;height:23%;left:3%;bottom:4%;transform:rotate(-1.5deg)}
+:global(.recognition-image i),:global(.recognition-label){position:absolute;font:14px var(--font-mono),monospace;letter-spacing:.045em;font-style:normal;z-index:3}
+:global(.recognition-image i){left:12px;bottom:12px;background:var(--paper);padding:7px;color:var(--brick)}
+:global(.recognition-label){padding:8px;background:var(--paper)}
+:global(.label-kids){left:48%;top:53%;color:var(--brick)}
+:global(.label-seasonal){right:20%;top:42%;background:var(--butter)}
+:global(.label-home){right:0;top:79%;background:var(--blue)}
+:global(.label-personal){left:28%;bottom:19%;background:var(--sage)}
+:global(.recognition-statement){position:absolute;left:33%;bottom:12%;font:clamp(25px,2.7vw,43px)/.98 var(--font-lora),serif;font-style:italic;letter-spacing:-.04em;margin:0;z-index:2}
+:global(.recognition-close){max-width:1220px;margin:0 auto;font:15px/1.4 var(--font-mono),monospace;letter-spacing:.055em;border-top:1px solid var(--ink);padding-top:25px;display:flex;justify-content:space-between;align-items:end}
+:global(.recognition-close span){font:42px/1 var(--font-lora),serif;font-style:italic;color:var(--brick)}
+
+@media(max-width:800px){
+  :global(.etsy){min-height:0!important;padding-bottom:60px!important}
+  :global(.recognition-wall){height:auto;display:flex;flex-direction:column;gap:28px;margin-top:10px}
+  :global(.recognition-image){position:relative;inset:auto!important;transform:none!important;width:auto!important;height:auto!important;aspect-ratio:1.2}
+  :global(.recognition-hero){order:1;aspect-ratio:.88}
+  :global(.recognition-core){order:2;width:72%!important;align-self:flex-start}
+  :global(.recognition-easter){order:3;width:62%!important;align-self:flex-end}
+  :global(.recognition-home){order:4;width:78%!important;align-self:flex-start}
+  :global(.recognition-halloween){order:5;width:48%!important;align-self:flex-end}
+  :global(.recognition-christmas){order:6;width:52%!important;align-self:flex-start}
+  :global(.recognition-pet){order:7;width:62%!important;align-self:flex-end}
+  :global(.recognition-label){display:none}
+  :global(.recognition-statement){position:relative;order:8;left:auto;bottom:auto;font-size:30px;margin:20px 0 14px}
+  :global(.recognition-close){margin-top:65px;font-size:12px}
+}

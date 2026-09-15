@@ -1,0 +1,30 @@
+:global(.impact){min-height:108vh!important;background:var(--brick)!important;color:var(--paper);display:flex;flex-direction:column;position:relative}
+:global(.impact .case-label),:global(.impact h2),:global(.impact-kicker),:global(.impact-note),:global(.impact-transition){color:var(--paper)}
+:global(.impact .case-label){margin:0 0 56px!important}
+:global(.impact-kicker){font:15px var(--font-mono),monospace;letter-spacing:.06em;margin:0 0 24px}
+:global(.impact h2){max-width:980px;font-size:clamp(58px,7.2vw,132px)!important}
+:global(.impact-note){align-self:flex-end;font:14px/1.45 var(--font-mono),monospace;letter-spacing:.05em;margin:30px 3% 24px 0;text-align:left}
+:global(.impact-numbers){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:22px 0 0;border-top:1px solid rgba(255,247,233,.7);border-left:1px solid rgba(255,247,233,.7)}
+:global(.impact-numbers > div){min-height:210px;padding:28px 28px 24px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid rgba(255,247,233,.7);border-bottom:1px solid rgba(255,247,233,.7)}
+:global(.impact-numbers strong){font:clamp(64px,8.2vw,150px)/.82 var(--font-fraunces),serif;letter-spacing:-.075em;color:var(--paper)}
+:global(.impact-numbers span){font:15px var(--font-mono),monospace;letter-spacing:.06em;color:var(--paper)}
+:global(.impact-transition){border-top:1px solid rgba(255,247,233,.7);margin:70px 0 0;padding-top:25px;font:15px/1.35 var(--font-mono),monospace;letter-spacing:.055em;display:grid;grid-template-columns:1fr auto;align-items:end;gap:22px}
+:global(.impact-transition span){grid-column:2;font:40px/1 var(--font-lora),serif;font-style:italic;justify-self:end}
+:global(.impact-transition b){grid-column:2;font:15px var(--font-mono),monospace;letter-spacing:.06em;font-weight:400;justify-self:end}
+
+@media(max-width:800px){
+  :global(.impact){min-height:0!important}
+  :global(.impact .case-label){margin-bottom:40px!important}
+  :global(.impact-kicker){font-size:13px}
+  :global(.impact h2){font-size:15vw!important}
+  :global(.impact-note){margin:28px 0 24px;font-size:13px}
+  :global(.impact-numbers > div){min-height:150px;padding:20px 14px}
+  :global(.impact-numbers strong){font-size:15vw}
+  :global(.impact-numbers span),:global(.impact-transition),:global(.impact-transition b){font-size:13px}
+  :global(.impact-transition){margin-top:54px;gap:14px}
+}
+
+@media(max-width:600px){
+  :global(.impact-numbers){grid-template-columns:1fr}
+  :global(.impact-numbers strong){font-size:24vw}
+}

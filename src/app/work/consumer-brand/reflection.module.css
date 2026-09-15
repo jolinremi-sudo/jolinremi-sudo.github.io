@@ -1,0 +1,29 @@
+:global(.reflection){background:var(--paper)!important;min-height:0!important}
+:global(.reflection-grid){display:grid;grid-template-columns:1.08fr .92fr;gap:8vw;align-items:end;min-height:680px}
+:global(.reflection .case-label){margin:0 0 30px!important}
+:global(.reflection h2){font-size:clamp(58px,6.6vw,122px)!important}
+:global(.reflection-content){padding-bottom:30px}
+:global(.reflection-lead){font:clamp(30px,3.2vw,54px)/1 var(--font-lora),serif!important;font-style:italic;margin:0 0 50px!important;letter-spacing:-.045em}
+:global(.reflection-lead em){color:var(--brick);font-style:italic}
+:global(.reflection .case-cn){max-width:530px;font-size:17px;line-height:1.7;margin:0 0 46px}
+:global(.method-line){font:14px/1.45 var(--font-mono),monospace;letter-spacing:.05em;border-top:1px solid var(--ink);padding-top:17px;margin:0}
+:global(.next-case){width:100%;min-height:260px;background:var(--butter);border:1px solid var(--ink);padding:32px 36px;display:grid!important;grid-template-columns:1fr auto;grid-template-rows:auto 1fr auto;gap:16px;margin:110px 0 0!important;text-decoration:none;color:var(--ink);transition:background-color .2s ease,transform .2s ease}
+:global(.next-case span),:global(.next-case small){font:14px var(--font-mono),monospace;letter-spacing:.055em}
+:global(.next-case strong){grid-column:1;font:clamp(42px,5vw,82px)/.9 var(--font-fraunces),serif;letter-spacing:-.06em;align-self:end}
+:global(.next-case small){grid-column:1;align-self:end}
+:global(.next-case i){grid-column:2;grid-row:1 / span 3;align-self:center;font:clamp(56px,8vw,130px)/1 var(--font-lora),serif;font-style:italic;color:var(--brick);transition:transform .2s ease}
+:global(.next-case:hover){background:#f3dea0;transform:translateY(-3px)}
+:global(.next-case:hover i){transform:translateX(10px)}
+
+@media(max-width:800px){
+  :global(.reflection-grid){grid-template-columns:1fr;gap:60px;min-height:0}
+  :global(.reflection h2){font-size:15vw!important}
+  :global(.reflection-content){padding:0}
+  :global(.reflection-lead){font-size:9vw!important;margin-bottom:38px!important}
+  :global(.reflection .case-cn){font-size:16px;margin-bottom:36px}
+  :global(.method-line){font-size:13px}
+  :global(.next-case){min-height:220px;margin-top:72px!important;padding:25px 20px;gap:14px;grid-template-columns:1fr 64px}
+  :global(.next-case span),:global(.next-case small){font-size:13px}
+  :global(.next-case strong){font-size:12vw}
+  :global(.next-case i){font-size:15vw;justify-self:end}
+}

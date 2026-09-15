@@ -1,0 +1,195 @@
+.section { background: var(--paper); }
+
+.recognition {
+  background: var(--butter);
+  padding: clamp(74px, 7.5vw, 112px) clamp(24px, 6.7vw, 96px) clamp(80px, 8vw, 120px);
+}
+
+.recognitionInner,
+.reflectionInner,
+.nextCase {
+  max-width: 1248px;
+  margin-inline: auto;
+}
+
+.recognitionInner {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: clamp(42px, 8vw, 128px);
+  align-items: center;
+}
+
+.label,
+.reflectionLabel,
+.flow,
+.nextCase span,
+.nextCase small,
+.nextCase em,
+.pickImage figcaption {
+  font-family: var(--font-mono), monospace;
+  letter-spacing: .05em;
+}
+
+.label { margin: 0 0 28px; font-size: 14px; }
+
+.recognition h2,
+.reflection h2 {
+  margin: 0;
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -.075em;
+  line-height: .84;
+}
+
+.recognition h2 { font-size: clamp(58px, 6.2vw, 105px); }
+
+.recognitionCopy > p:not(.label) {
+  margin: 31px 0 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.recognitionCopy > p:not(.label) + p:not(.label) { margin-top: 17px !important; }
+
+.pickImage {
+  position: relative;
+  aspect-ratio: 1.24;
+  margin: 0;
+  overflow: visible;
+  border: 1px solid var(--ink);
+  box-shadow: 9px 10px 0 rgba(61, 41, 30, .16);
+  background: var(--paper);
+  transform: rotate(1deg);
+}
+
+.pickImage img { object-fit: cover !important; object-position: center; }
+
+.pickImage figcaption {
+  position: absolute;
+  right: -12px;
+  bottom: -17px;
+  padding: 8px 10px;
+  background: var(--paper);
+  color: var(--brick);
+  font-size: 13px;
+}
+
+.reflection {
+  padding: clamp(84px, 8vw, 126px) clamp(24px, 6.7vw, 96px) 0;
+}
+
+.reflectionInner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  column-gap: clamp(38px, 9vw, 148px);
+  align-items: end;
+}
+
+.reflectionLabel {
+  grid-column: 1;
+  margin: 0 0 29px;
+  font-size: 14px;
+}
+
+.reflection h2 {
+  grid-column: 1;
+  font-size: clamp(49px, 5.3vw, 91px);
+}
+
+.mobileBreak { display: none; }
+
+.takeaway {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  margin: 0;
+  color: var(--brick);
+  font-family: var(--font-lora), Georgia, serif;
+  font-size: clamp(29px, 3vw, 48px);
+  font-style: italic;
+  line-height: .98;
+}
+
+.chineseReflection {
+  grid-column: 2;
+  margin-top: 34px;
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.chineseReflection p { margin: 0; }
+.chineseReflection p + p { margin-top: 17px; }
+
+.flow {
+  grid-column: 1 / -1;
+  margin: clamp(54px, 6vw, 83px) 0 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(61, 41, 30, .48);
+  color: var(--brick);
+  font-size: 14px;
+}
+
+.flow span { padding-inline: 12px; }
+
+.nextCase {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  min-height: 246px;
+  margin-top: clamp(75px, 8vw, 122px);
+  padding: 28px clamp(22px, 4vw, 54px) 32px;
+  overflow: hidden;
+  border: 1px solid var(--ink);
+  background: var(--sage);
+  color: var(--ink);
+}
+
+.nextCase span,
+.nextCase small,
+.nextCase em { font-size: 13px; }
+.nextCase strong {
+  grid-column: 1;
+  align-self: end;
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: clamp(46px, 5.2vw, 87px);
+  font-weight: 600;
+  letter-spacing: -.07em;
+  line-height: .86;
+}
+
+.nextCase small { grid-column: 1; }
+.nextCase em {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  align-self: center;
+  color: var(--brick);
+  font-style: normal;
+  writing-mode: vertical-rl;
+}
+
+@media (max-width: 760px) {
+  .recognition { padding: 80px 24px 94px; }
+  .recognitionInner { display: flex; flex-direction: column; gap: 48px; align-items: stretch; }
+  .label, .reflectionLabel { font-size: 13px; }
+  .recognition h2 { font-size: 15vw; }
+  .recognitionCopy > p:not(.label) { margin-top: 30px; font-size: 15px; }
+  .pickImage { width: 92%; align-self: flex-end; }
+  .pickImage figcaption { font-size: 13px; }
+
+  .reflection { padding: 88px 24px 0; }
+  .reflectionInner { display: block; }
+  .reflection h2 { font-size: 11.7vw; }
+  .reflection h2 span { display: block; }
+  .desktopBreak { display: none; }
+  .mobileBreak { display: block; }
+  .takeaway { margin-top: 38px; font-size: 31px; }
+  .chineseReflection { margin-top: 38px; font-size: 15px; }
+  .flow { margin-top: 48px; font-size: 13px; line-height: 2; }
+  .flow span { padding-inline: 5px; }
+
+  .nextCase { min-height: 220px; margin-top: 74px; padding: 24px; }
+  .nextCase span, .nextCase small, .nextCase em { font-size: 13px; }
+  .nextCase strong { font-size: 13vw; }
+}

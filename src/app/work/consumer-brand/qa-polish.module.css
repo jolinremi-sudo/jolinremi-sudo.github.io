@@ -1,0 +1,24 @@
+:global(.strategy .strategy-intro){margin-bottom:18px}
+:global(.strategy-scope){font:13px var(--font-mono),monospace;letter-spacing:.055em;color:var(--brick);margin:0 0 52px}
+:global(.strategy-scope + .strategy-map){margin-top:0}
+
+:global(.visuals){padding-top:145px!important;padding-bottom:120px!important}
+:global(.visuals .case-lead){margin-bottom:50px!important}
+:global(.visuals .lifestyle-composition){height:800px}
+:global(.visuals .lifestyle-hero){height:760px}
+:global(.visuals .lifestyle-family){height:420px;top:160px}
+:global(.visuals .lifestyle-play){height:270px;top:420px}
+:global(.visuals .life-statement){margin-bottom:24px}
+:global(.visuals .system-transition){margin-bottom:24px}
+:global(.visuals .detail-caption){position:absolute!important;left:auto!important;right:13%;top:calc(90% + 8px);bottom:auto!important;font:14px var(--font-mono),monospace;letter-spacing:.04em;background:var(--paper);padding:6px;z-index:3}
+
+@media(max-width:800px){
+  :global(.visuals){padding-top:88px!important;padding-bottom:88px!important}
+  :global(.visuals .lifestyle-composition){height:890px}
+  :global(.visuals .lifestyle-hero){height:53%}
+  :global(.visuals .lifestyle-family){height:27%;top:48%}
+  :global(.visuals .lifestyle-play){height:23%;top:58%}
+  :global(.visuals .caption-moments),:global(.visuals .caption-family),:global(.visuals .caption-play),:global(.visuals .system-sheet span),:global(.visuals .detail-caption){font-size:13px}
+  :global(.visuals .detail-caption){right:8%;top:calc(86% + 8px)}
+  :global(.impact .impact-numbers span),:global(.impact-transition),:global(.impact-transition b),:global(.recognition-close),:global(.next-case span),:global(.next-case small),:global(.method-line){font-size:13px}
+}
