@@ -37,7 +37,7 @@ export default function EasterMomentCaseStudy() {
             <span className={styles.blueField} aria-hidden="true" />
             <div className={styles.coverImage}>
               <Image
-                src="/images/easter-moment/easter-01-cover.png"
+                src="/images/easter-moment/easter-01-cover.webp"
                 alt="Girl with a personalized Easter basket in a spring setting"
                 fill
                 priority
@@ -71,7 +71,7 @@ export default function EasterMomentCaseStudy() {
         <div className={styles.lifestyleStage}>
           <span className={styles.sageField} aria-hidden="true" />
           <div className={styles.lifestyleImage}>
-            <Image src="/images/easter-moment/easter-04-lifestyle.png" alt="Child using a personalized Easter basket outdoors" fill sizes="(max-width: 760px) 88vw, 48vw" />
+            <Image src="/images/easter-moment/easter-04-lifestyle.webp" alt="Child using a personalized Easter basket outdoors" fill sizes="(max-width: 760px) 88vw, 48vw" />
           </div>
           <span className={styles.eggHunt}>EGG HUNT ↗</span>
         </div>
@@ -95,13 +95,13 @@ export default function EasterMomentCaseStudy() {
           </div>
 
           <figure className={concept.campaignImage}>
-            <Image src="/images/easter-moment/easter-03-campaign.png" alt="Easter campaign visual direction" fill sizes="(max-width: 760px) 88vw, 46vw" />
+            <Image src="/images/easter-moment/easter-03-campaign.webp" alt="Easter campaign visual direction" fill sizes="(max-width: 760px) 88vw, 46vw" />
           </figure>
           <figure className={concept.visualImage}>
-            <Image src="/images/easter-moment/easter-05-visual.jpg" alt="Spring visual direction variation" fill sizes="(max-width: 760px) 72vw, 22vw" />
+            <Image src="/images/easter-moment/easter-05-visual.webp" alt="Spring visual direction variation" fill sizes="(max-width: 760px) 72vw, 22vw" />
           </figure>
           <figure className={concept.indoorImage}>
-            <Image src="/images/easter-moment/easter-06-indoor.png" alt="Indoor seasonal visual variation" fill sizes="(max-width: 760px) 72vw, 25vw" />
+            <Image src="/images/easter-moment/easter-06-indoor.webp" alt="Indoor seasonal visual variation" fill sizes="(max-width: 760px) 72vw, 25vw" />
           </figure>
           <span className={concept.annotation}>SEASONAL WORLD ↗</span>
         </div>
@@ -141,11 +141,11 @@ export default function EasterMomentCaseStudy() {
 
         <div className={commerce.examples}>
           <figure className={commerce.productExample}>
-            <Image src="/images/easter-moment/easter-07-product.png" alt="Seasonal assortment product presentation" fill sizes="(max-width: 760px) 88vw, 46vw" />
+            <Image src="/images/easter-moment/easter-07-product.webp" alt="Seasonal assortment product presentation" fill sizes="(max-width: 760px) 88vw, 46vw" />
             <figcaption>PRODUCT / CLARITY</figcaption>
           </figure>
           <figure className={commerce.optionsExample}>
-            <Image src="/images/easter-moment/easter-08-options.png" alt="Customization options within the seasonal assortment" fill unoptimized sizes="(max-width: 760px) 88vw, 28vw" />
+            <Image src="/images/easter-moment/easter-08-options.webp" alt="Customization options within the seasonal assortment" fill sizes="(max-width: 760px) 88vw, 28vw" />
             <figcaption>CUSTOMIZATION / CHOICE</figcaption>
           </figure>
           <p className={commerce.assortment}>ACROSS THE SEASONAL ASSORTMENT</p>
@@ -162,7 +162,7 @@ export default function EasterMomentCaseStudy() {
               <p>其中一个使用这组视觉的复活节商品 Listing<br />获得了 Etsy&apos;s Pick。</p>
             </div>
             <figure className={closing.pickImage}>
-              <Image src="/images/easter-moment/easter-02-etsy-pick.png" alt="Easter product visual selected as an Etsy's Pick" fill priority unoptimized sizes="(max-width: 760px) 88vw, 47vw" />
+              <Image src="/images/easter-moment/easter-02-etsy-pick.webp" alt="Easter product visual selected as an Etsy's Pick" fill priority sizes="(max-width: 760px) 88vw, 47vw" />
               <figcaption>SELECTED BY ETSY ↗</figcaption>
             </figure>
           </div>
