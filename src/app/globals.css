@@ -245,3 +245,4 @@
 }
 
 .archive-butter{background:var(--butter)!important}
+.play-status{font:11px var(--font-mono),monospace;letter-spacing:.045em;opacity:.72}.play-item.static-item:hover{transform:rotate(0deg)}.note.static-item:hover{transform:rotate(2deg)}.ticket.static-item:hover{transform:rotate(3deg)}
