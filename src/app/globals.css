@@ -246,3 +246,4 @@
 
 .archive-butter{background:var(--butter)!important}
 .play-status{font:11px var(--font-mono),monospace;letter-spacing:.045em;opacity:.72}.play-item.static-item:hover{transform:rotate(0deg)}.note.static-item:hover{transform:rotate(2deg)}.ticket.static-item:hover{transform:rotate(3deg)}
+.hero-photo-detail{overflow:hidden}.hero-photo-detail img{object-position:55% 64%;transform:scale(1.2);transform-origin:55% 64%}
