@@ -243,3 +243,5 @@
   [class*="roleNotes"] article:nth-child(3){padding-left:0!important}
   [class*="process"]{align-items:flex-start!important;flex-direction:column!important;gap:6px!important}
 }
+
+.archive-butter{background:var(--butter)!important}
