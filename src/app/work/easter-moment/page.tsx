@@ -180,12 +180,12 @@ export default function EasterMomentCaseStudy() {
             <p className={closing.flow}>RITUAL <span>→</span> WORLD <span>→</span> DESIRE <span>→</span> CHOICE</p>
           </div>
 
-          <div className={closing.nextCase} aria-label="Preview of the next case study">
+          <Link className={closing.nextCase} href="/work/visual-storytelling" aria-label="Open the Visual Storytelling case study">
             <span>NEXT CASE ↗</span>
             <strong>VISUAL STORYTELLING</strong>
             <small>PERSONALIZED PRODUCTS / LIFESTYLE CONTENT</small>
             <em>CASE PREVIEW</em>
-          </div>
+          </Link>
         </div>
       </section>
     </main>
